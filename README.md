@@ -1,1 +1,1 @@
-# AI Comparison Web
+# Next.js Template
