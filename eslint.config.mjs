@@ -1,8 +1,8 @@
-import { defineConfig, globalIgnores } from 'eslint/config';
-import eslintConfigNextCoreWebVitals from 'eslint-config-next/core-web-vitals';
-import eslintConfigNextTypescript from 'eslint-config-next/typescript';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports';
+import eslintConfigNextCoreWebVitals from 'eslint-config-next/core-web-vitals';
+import eslintConfigNextTypescript from 'eslint-config-next/typescript';
+import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
   ...eslintConfigNextCoreWebVitals,
