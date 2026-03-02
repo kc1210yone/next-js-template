@@ -5,6 +5,13 @@ import eslintConfigNextTypescript from 'eslint-config-next/typescript';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
+  globalIgnores([
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts',
+    'coverage/**',
+  ]),
   ...eslintConfigNextCoreWebVitals,
   ...eslintConfigNextTypescript,
   {
@@ -16,11 +23,4 @@ export default defineConfig([
     },
   },
   eslintConfigPrettier,
-  globalIgnores([
-    '.next/**',
-    'out/**',
-    'build/**',
-    'next-env.d.ts',
-    'coverage/**',
-  ]),
 ]);
